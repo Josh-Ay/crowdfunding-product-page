@@ -2,6 +2,8 @@
 
 This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+Preview live site [here].(https://obscure-peak-65584.herokuapp.com/)
+
 ## Table of contents
 
 - [Overview](#overview)
