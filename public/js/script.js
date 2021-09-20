@@ -127,8 +127,6 @@ const scrollToPledgeElement = function(elementToScrollTo) {
     elementToScrollTo.focus();
 
     elementToScrollTo.children[0].children[0].checked = true;
-    // elementToScrollTo.children[3].style.display = "block";
-    // elementToScrollTo.children[2].style.top = "18.1%";
     let offsetPosition = elementToScrollTo.offsetTop;
     window.scrollTo({
         top: offsetPosition,

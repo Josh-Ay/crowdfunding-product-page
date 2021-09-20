@@ -6,7 +6,6 @@ const port = 3000;
 
 // Configuring the express app
 const app = express();
-// const router = express.Router();
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
