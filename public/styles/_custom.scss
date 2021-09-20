@@ -1,0 +1,77 @@
+// General custom styles
+img{
+    max-width: 100%;
+}
+
+p{
+    color: $darkGrey;
+    @media(max-width: 767px){
+        font-size: $fontSize / 1.11;
+        line-height: 1.8;
+    }
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.bookmarked{
+    color: $darkCyan !important;
+    svg{
+        circle{
+            fill: $darkCyan;
+        }
+    }
+}
+
+.cyan-btn{
+    background: $moderateCyan;
+    color: $whiteColor;
+    padding: 3% 6.7%;
+    &:hover{
+        background: $darkCyan;
+    }
+    &:focus{
+        background: $darkCyan;
+    }
+}
+
+.fade-in-1{
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fade-in-2{
+    animation: fadeIn 3s ease-in-out;
+}
+
+.fade-in-3{
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.grey-btn{
+    background: $moderateGrey;
+    color: $darkGrey;                
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.pledge{
+    color: $moderateCyan;
+    font-size: $fontSize/1.15;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

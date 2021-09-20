@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./mixins";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $commisionerFont;
+    font-size: $fontSize;
+}
+
+@import "./custom";
+
+@import "./nav";
+
+main{
+    position: relative;
+    background: $paleGrey;
+    
+    @import "./cardContainer";
+
+    @import "./pledgeContainer";
+
+    @import "./successModal";
+}

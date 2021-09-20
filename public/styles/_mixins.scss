@@ -1,0 +1,47 @@
+@mixin displayFlexCenterandJustify($justifyValue) {
+    display: flex;
+    align-items: center;
+    justify-content: $justifyValue;
+}
+
+@mixin displayInlineFlexAndCenter() {
+    display: inline-flex;
+    align-items: center;
+}
+
+@mixin makeElementFocusableWithCursor($opacity) {
+    &:hover{
+        cursor: pointer;
+        transition: 1s;
+        opacity: $opacity;
+    }
+    &:focus{
+        cursor: pointer;
+        transition: 1s;
+        opacity: $opacity;
+    }
+}
+
+@mixin positionAbsoluteandCenter() {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);        
+}
+
+@mixin renderNotAllowed($opacity) {
+    cursor: not-allowed;
+    opacity: $opacity;
+    &:hover{
+        cursor: not-allowed;
+    }
+    &:focus{
+        cursor: not-allowed;
+    }
+}
+
+@mixin setVerticalLineProperties($height, $borderWidth, $borderColor) {
+    height: $height;
+    border: $borderWidth solid;
+    border-color: $borderColor;
+}

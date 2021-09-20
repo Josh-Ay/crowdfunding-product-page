@@ -1,0 +1,101 @@
+nav{
+    background: url(../images/image-hero-desktop.jpg) no-repeat;
+    background-size: contain;
+    padding-bottom: 20.3%; 
+    .hamburger-icon{
+        display: none;
+        transition: 2s ease-in-out;
+        cursor: pointer;
+    }   
+    .nav-container{
+        padding: 3% 11.5%;
+        @include displayFlexCenterandJustify(space-between);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent);
+        .navigation-links{
+            width: 20%;
+            @include displayFlexCenterandJustify(space-between);
+            list-style: none;
+            li{
+                a{
+                    font-size: $fontSize/1.21;
+                    text-decoration: none;
+                    color: $lightGrey;
+                    @include makeElementFocusableWithCursor(0.7);
+                }
+                
+            }
+        }
+        @media (min-width: 992px) and (max-width:1200px){
+            .navigation-links{
+                width: 25%;
+            }
+        }
+        @media (max-width: 991px){
+            .navigation-links{
+                position: absolute;
+                flex-direction: column;
+                top: 1%;
+                right: 11.5%;
+                background-color: $whiteColor;
+                border-radius: 10px;
+                width: 23%;
+                align-items: center;
+                z-index: 2;
+                display: none;
+                transform: translateY(37%);
+                transition: transform 2s ease-in;
+                li{
+                    border-bottom: 1px solid $moderateGrey;
+                    width: 100%;
+                    text-align: center;
+                    padding: 8% 0;
+                    a{
+                        margin-bottom: 8%;
+                        font-weight: 500;
+                        color: $blackColor;
+                    }
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+            .navigation-links.open{
+                display: block;
+                box-shadow: 0 0 250px 150px $backgroundBlur;
+            }
+            .hamburger-icon{
+                display: block;
+            }
+        }
+        @media(max-width: 767px){
+            padding: 9.8% 5% 0;
+            img{
+                height: 1.3rem;
+            }
+            .hamburger-icon img{
+                height: 60%;
+            }
+            img, .hamburger-icon{
+                z-index: 3;
+            }
+            .navigation-links{
+                right: 5%;
+                width: 90%;
+                margin: auto;
+                li{
+                    text-align: left;
+                    padding-left: 10%;
+                    a{
+                        font-size: $fontSize*1.08;
+                    }
+                }
+            }
+       }    
+    }
+    @media(max-width: 767px){
+       background: url(../images/image-hero-mobile.jpg) no-repeat;
+       background-size: cover;
+       padding-bottom: 64.3%;
+    }
+    
+}
