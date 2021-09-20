@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/crowdfunding-product-page-MADuFqlbY)
+- Live Site URL: [Live Site](https://obscure-peak-65584.herokuapp.com/)
 
 ## My process
 
@@ -61,10 +61,10 @@ Users should be able to:
 ### Useful resources
 - [How to create a custom progress bar](https://www.florin-pop.com/blog/2019/06/how-to-create-a-custom-progress-bar/).
 - [W3Schools](https://www.w3schools.com/) - This is an amazing website for looking up, learning and fully understanding things.
--[jQuery](https://api.jquery.com/)
--[CSS Tricks- Change SVG Color](https://css-tricks.com/change-color-of-svg-on-hover/)
--[Stack Overflow](https://stackoverflow.com/)
--[MDN Docs- Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [jQuery](https://api.jquery.com/)
+- [CSS Tricks- Change SVG Color](https://css-tricks.com/change-color-of-svg-on-hover/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [MDN Docs- Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Author
 - Frontend Mentor - [@Josh_Ay](https://www.frontendmentor.io/profile/Josh-Ay)
